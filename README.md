@@ -13,10 +13,10 @@ Ao instalar o Visual Studio - instale os itens abaixo:
 
 # Como rodar o projeto:
 
-1 - Abrir a Solution AgendaTarefas.sln no Visual Studio
+1 - Faça download dos arquivos e em abrir projeto ou uma solução no Visual Studio abra o arquivo AgendaTarefas.sln
 
-2 - Abra o arquivo appsettings.json 
-   Troque a ConnectionStrings para a string de conexão do seu SQLServer 
+2 - Nos arquivos do projeto (Gerenciador de Soluções) Abra o arquivo appsettings.json 
+   Edite a "DataBase": para a string de conexão do seu SQLServer 
 
 3 - No Visual Studio va em Ferramentas > Gerenciador de Pacotes do NuGet > Console do Gerenciador de Pacotes
     Rode o seguinte comando:
