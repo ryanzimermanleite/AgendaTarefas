@@ -2,8 +2,7 @@
 
 Projeto Desenvolvido em ASP.NET Core Web App (Model-View-Controller) .NET 5.0 e C#
 
-OBS: 
-##Durante a instalação do Visual Studio - instale os itens abaixo:
+## Durante a instalação do Visual Studio - instale os itens abaixo:
 
 #### 1.1 Cargas de trabalho: (ASP.NET e desenvolvimento Web, Desenvolvimento para desktop com .NET, Processamento e armazenamento de dados)
 
