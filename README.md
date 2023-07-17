@@ -11,7 +11,7 @@ OBS:
 
 1.3 Componentes individuais: (Runtime do .NET 5.0 (Sem suporte)*)
 
-
+######################################
 
 1 - Abrir a Solution AgendaTarefas.sln no Visual Studio
 
