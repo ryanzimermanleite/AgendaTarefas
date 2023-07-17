@@ -7,9 +7,9 @@ Projeto Desenvolvido em ASP.NET Core Web App (Model-View-Controller) .NET 5.0 e 
 OBS: 
 1.1 Ao instalar o Visual Studio - instale os itens abaixo:
 
-1.2 Cargas de trabalho: ASP.NET e desenvolvimento Web, Desenvolvimento para desktop com .NET, Processamento e armazenamento de dados
+1.2 Cargas de trabalho: (ASP.NET e desenvolvimento Web, Desenvolvimento para desktop com .NET, Processamento e armazenamento de dados)
 
-1.3 Componentes individuais: Runtime do .NET 5.0 (Sem suporte)*
+1.3 Componentes individuais: (Runtime do .NET 5.0 (Sem suporte)*)
 
 
 
