@@ -1,0 +1,44 @@
+﻿@model List<ListaModel>
+@{
+    ViewData["Title"] = "Listagem Personalizada de Tarefas";
+}
+<div class="text-center">
+
+
+    <h1 class="display-4">Listagem Personalizada de Tarefas</h1>
+    <br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th scope="col">Data</th>
+                <th scope="col">Total Horas/Dia</th>
+                <th scope="col">Total Tarefas/Dia</th>
+                <th scope="col">Média de Horas/Dia</th>
+                <th scope="col">Total Finalizadas/Dia</th>
+                <th scope="col">Percentual Finalizadas</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+
+                    <tr>
+                        <td>@item.DataHr.ToString("d")</td>
+                        <td>@item.DiferencaHr</td>
+                        <td>@item.TotalTarefas</td>
+                        <td>@item.Media</td>
+                        <td>@item.TotalFinalizadas</td>
+                        <td>@item.Percentual</td>
+                        <!-- Exiba outras propriedades do objeto NovaModel -->
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+

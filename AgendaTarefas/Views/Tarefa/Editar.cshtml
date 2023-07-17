@@ -1,0 +1,63 @@
+﻿@model TarefaModel
+@{
+    ViewData["Title"] = "Editar Tarefa";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Editar Tarefa</h1>
+
+</div>
+
+<form asp-controller="Tarefa" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" asp-for="Titulo" class="form-control" placeholder="Digite o título da tarefa">
+        @Html.ValidationMessageFor(x => x.Titulo)
+    </div>
+
+    <div class="form-group">
+        <label for="descricao">Descrição</label>
+        <input type="text" asp-for="Descricao" class="form-control" placeholder="Digite a descrição tarefa">
+        @Html.ValidationMessageFor(x => x.Descricao)
+    </div>
+
+    <div class="form-group">
+        <label for="data">Data</label>
+        <input type="date" asp-for="Data" class="form-control">
+        @Html.ValidationMessageFor(x => x.Data)
+    </div>
+
+    <div class="form-group">
+        <label for="inicio">Hora Início</label>
+        <input type="time" asp-for="Inicio" class="form-control">
+        @Html.ValidationMessageFor(x => x.Inicio)
+    </div>
+
+    <div class="form-group">
+        <label for="final">Hora Final</label>
+        <input type="time" asp-for="Final" class="form-control">
+        @Html.ValidationMessageFor(x => x.Final)
+    </div>
+
+    <div class="form-group">
+        <label for="prioridade">Prioridade</label>
+        <input type="radio" asp-for="Prioridade" name="prioridade" value="Alta" /> Alta
+        <input type="radio" asp-for="Prioridade" name="prioridade" value="Média" /> Média
+        <input type="radio" asp-for="Prioridade" name="prioridade" value="Baixa" /> Baixa
+        @Html.ValidationMessageFor(x => x.Prioridade)
+    </div>
+
+
+    <div class="form-group">
+        <label for="prioridade">Finalizada</label>
+        <input type="radio" asp-for="Finalizada" name="finalizada" value="Sim" /> Sim
+        <input type="radio" asp-for="Finalizada" name="finalizada" value="Não" /> Não
+        @Html.ValidationMessageFor(x => x.Finalizada)
+    </div>
+
+
+    <button type="submit" class="btn btn-primary btn-block">Alterar</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Tarefa" asp-action="Index" role="button">Voltar</a>
+</form>
